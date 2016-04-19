@@ -2,7 +2,7 @@
 <html>
 
 	<head>
-		 <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.5.0/fabric.min.js"></script>
 
 	</head>
@@ -10,6 +10,7 @@
 	<body>
 		<canvas id="canvas"></canvas>
 		<div><p>Hei</p></div>
+
 	</body>
 
 	<script>
@@ -18,7 +19,7 @@
 			fabric.Image.fromURL('https://www.petfinder.com/wp-content/uploads/2012/11/140272627-grooming-needs-senior-cat-632x475.jpg', function(oImg) {
   canvas.add(oImg);
 });
-			fabric.Image.fromURL('my_image.png', function(oImg) {
+			fabric.Image.fromURL('https://www.petfinder.com/wp-content/uploads/2012/11/140272627-grooming-needs-senior-cat-632x475.jpg', function(oImg) {
   // scale image down, and flip it, before adding it onto canvas
   oImg.scale(0.5).setFlipX(true);
   canvas.add(oImg);
