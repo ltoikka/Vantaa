@@ -1,0 +1,14 @@
+$myBlue: #0002FF;
+$margin: 10px;
+
+h2 {
+	color: red;
+
+	a {
+		color: blue;
+
+		&:hover {
+			color: black;
+		}
+	}
+}
