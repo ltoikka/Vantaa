@@ -12,4 +12,18 @@
 		<div><p>Hei</p></div>
 	</body>
 
+	<script>
+
+	$(document).ready( function() { 
+			fabric.Image.fromURL('https://www.petfinder.com/wp-content/uploads/2012/11/140272627-grooming-needs-senior-cat-632x475.jpg', function(oImg) {
+  canvas.add(oImg);
+});
+			fabric.Image.fromURL('my_image.png', function(oImg) {
+  // scale image down, and flip it, before adding it onto canvas
+  oImg.scale(0.5).setFlipX(true);
+  canvas.add(oImg);
+});
+}
+	</script>
+
 </html>
