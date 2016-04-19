@@ -10,12 +10,25 @@
 	<body>
 		<canvas id="canvas"></canvas>
 		<div><p>Hei</p></div>
+		<canvas id="c"></canvas>
+	<img src="my_image.png" id="my-image">
 
-	</body>
+	
 
 	<script>
 
 	$(document).ready( function() { 
+
+		var canvas = new fabric.Canvas('c');
+var imgElement = document.getElementById('my-image');
+var imgInstance = new fabric.Image(imgElement, {
+  left: 100,
+  top: 100,
+  angle: 30,
+  opacity: 0.85
+});
+canvas.add(imgInstance);
+
 			fabric.Image.fromURL('https://www.petfinder.com/wp-content/uploads/2012/11/140272627-grooming-needs-senior-cat-632x475.jpg', function(oImg) {
   canvas.add(oImg);
 });
@@ -26,5 +39,5 @@
 });
 }
 	</script>
-
+	</body>
 </html>
