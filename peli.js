@@ -5,6 +5,17 @@ $(document).ready( function() {
   var canvas = new fabric.Canvas('c');
   var ctx = canvas.getContext('2d');
 
+
+  canvas.on('mouse:down', function() {
+    canvas.isDrawingMode = true;
+  }); //need button that allows for drawing picture
+
+  canvas.on('path:created', function() {
+    canvas.off('mouse:down');
+  });
+
+
+
   fabric.Image.fromURL('https://pixabay.com/static/uploads/photo/2014/04/03/10/00/stool-309589_960_720.png', function(oImg) {
     oImg.scale(0.1).set({
       left: 10,
@@ -100,5 +111,7 @@ canvas.setBackgroundImage('junanakyma1.png', canvas.renderAll.bind(canvas), {
     backgroundImageOpacity: 0,
     backgroundImageStretch: false
 });
+
+
 
 });
