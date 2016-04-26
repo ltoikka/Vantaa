@@ -8,9 +8,10 @@ $(document).ready( function() {
 
   canvas.on('mouse:down', function() {
     canvas.isDrawingMode = true;
-  }); //need button that allows for drawing picture
+  }); //need solution for this.. a button or area where drawing
 
   canvas.on('path:created', function() {
+    canvas.isDrawingMode = false;
     canvas.off('mouse:down');
   });
 
