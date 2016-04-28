@@ -9,25 +9,14 @@ $(document).ready( function() {
 
   var x = document.getElementById("myAudio"); 
 
-function playAudio() { 
     x.play(); 
-} 
-
-function pauseAudio() { 
-    x.pause(); 
-} 
-
-$('#play').click(playAudio)
-$('#pause').click(pauseAudio)
 
 
-  canvas.on('mouse:down', function() {
+
+
     canvas.isDrawingMode = true;
   }); //need solution for this.. a button or area where drawing
 
-  canvas.on('path:created', function() {
-    canvas.isDrawingMode = false;
-    canvas.off('mouse:down');
   });
 
 drawItem(canvas, 'https://pixabay.com/static/uploads/photo/2014/04/03/10/00/stool-309589_960_720.png', 10);
@@ -48,4 +37,3 @@ canvas.setBackgroundImage('junanakyma1.png', canvas.renderAll.bind(canvas), {
 
 
 
-});
