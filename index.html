@@ -27,10 +27,28 @@
 		<button id="pause" type="button">Pause Audio</button>
 		<button id="startDrawing" type="button">Start drawing</button> 
 		<button id="stopDrawing" type="button">Stop drawing</button> 
-		<button id="delete">Delete selection</button>
+		<button id="delete" type="button">Delete selection</button>
+		<button id="red" type="button">Red</button>
+		<button id="blue" type="button">Blue</button>
+		<button id="green" type="button">Green</button>
+		<button id="yellow" type="button">Yellow</button>
 
+				<div style="position:relative; width: 1400px; height:900px;">
+		 <div class="menu" style="position:absolute; z-index:10; width: 10%; height: 10%; right: 50%; top: 30%">
+		  <button id="hide" type="button">Start Game</button> 
+		 </div>
+		 <div class="canvas-container"  style="width: 100%; height: 100%; position: relative; -webkit-user-select: none;">
+		  <canvas style="position: absolute; z-index: 9; width: 1400px; height: 900px; left: 0px; top: 0px; -webkit-user-select: none;" id="c" width="1400" height="900" >
+		  
+		  </canvas>
+		  <!--<canvas class="upper-canvas " width="1400" height="900" style="position: absolute; z-index: 9; width: 1400px; height: 900px; left: 0px; top: 0px; -webkit-user-select: none; cursor: default;">
+		  
+		  </canvas> -->
+		 </div>
+		  
 
-		<canvas id="c"  width="1400" height="900" ></canvas>
+		 <!--<canvas style="position:absolute; z-index:9;" id="c"  width="1400" height="900" ></canvas>-->
+		</div>
 	
 
 	
