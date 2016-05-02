@@ -1,58 +1,73 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
+ <head>
 
-		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.5.0/fabric.min.js"></script>
-		<script type='text/javascript' src='peli.js'></script>
-		<script type='text/javascript' src='images.js'></script>
-		<link rel="stylesheet" type="text/css" href="peli.css">
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.5.0/fabric.min.js"></script>
+  <script type='text/javascript' src='peli.js'></script>
+  <script type='text/javascript' src='images.js'></script>
+  <link rel="stylesheet" type="text/css" href="peli.css">
 
 
-	</head>
+ </head>
 
-	<body>
+ <body id="body">
 
-		<audio id="myAudio">
-		  <source src="0927.ogg" type="audio/ogg">
-		  <source src="horse.mp3" type="audio/mpeg">
-		  Your browser does not support the audio element.
-		</audio>
-		
-		<div><p>Hei</p></div>
-		<p>Click the buttons to play or pause the audio.</p>
+  <audio id="myAudio">
+    <source src="0927.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <div><p>Hei</p></div>
+  <p>Click the buttons to play or pause the audio.</p>
 
-		<button id="play" type="button" >Play Audio</button>
-		<button id="pause" type="button">Pause Audio</button>
-		<button id="startDrawing" type="button">Start drawing</button> 
-		<button id="stopDrawing" type="button">Stop drawing</button> 
-		<button id="delete" type="button">Delete selection</button>
-		<button id="red" type="button">Red</button>
-		<button id="blue" type="button">Blue</button>
-		<button id="green" type="button">Green</button>
-		<button id="yellow" type="button">Yellow</button>
+  <button id="play" type="button" >Play Audio</button>
+  <button id="pause" type="button">Pause Audio</button>
+  
+  <button id="stopDrawing" type="button">Stop drawing</button> 
+  <button id="delete" type="button">Delete selection</button>
+ <button id="clone" type="button">copy</button>
+ <button id="black" type="button">Black brush</button>
+  <button id="red" type="button">Red brush</button>
+  <button id="blue" type="button">Blue brush</button>
+  <button id="green" type="button">Green brush</button>
+  <button id="yellow" type="button">Yellow brush</button>
+  <button id="scene2" type="button">scene2</button> 
+  <button id="scene1" type="button">scene1</button>
 
-				<div style="position:relative; width: 1400px; height:900px;">
-		 <div class="menu" style="position:absolute; z-index:10; width: 10%; height: 10%; right: 50%; top: 30%">
-		  <button id="hide" type="button">Start Game</button> 
-		 </div>
-		 <div class="canvas-container"  style="width: 100%; height: 100%; position: relative; -webkit-user-select: none;">
-		  <canvas style="position: absolute; z-index: 9; width: 1400px; height: 900px; left: 0px; top: 0px; -webkit-user-select: none;" id="c" width="1400" height="900" >
-		  
-		  </canvas>
-		  <!--<canvas class="upper-canvas " width="1400" height="900" style="position: absolute; z-index: 9; width: 1400px; height: 900px; left: 0px; top: 0px; -webkit-user-select: none; cursor: default;">
-		  
-		  </canvas> -->
-		 </div>
-		  
+  <div style="position:relative; width: 1400px; height:900px;">
+  <div class="menu" id="goAway" style="position:absolute; z-index:10; width: 50%; height: 10%; right: 30%; top: 20%">
+   <p>
+    In this game you have the chance to design your own train cabin!<br>
+    <br>
+    Above you can see the tool for this game! <br>
+    You can chooce the background from two options. <br>
+    You have a drawing tool, you can chooce the color of the pen and you can move your drawings aroud!<br>
+    You can use the funiture below, you can move it around the cabin!<br>
+    <br>
+    Once you're done post a screenshot of your design with #Blue&OrangeTrains !<br>
+    Best one will be toteutettu
+   </p>
+   <button id="hide" type="button">Start Game</button> 
+  </div>
+  <div class="canvas-container"  style="width: 100%; height: 100%; position: relative; -webkit-user-select: none;">
+  <canvas style="position: absolute; z-index: 9; width: 1400px; height: 900px; left: 0px; top: 0px; -webkit-user-select: none;" id="c" width="940" height="1000" >
+    
+  </canvas>
+    <!--<canvas class="upper-canvas " width="1400" height="900" style="position: absolute; z-index: 9; width: 1400px; height: 900px; left: 0px; top: 0px; -webkit-user-select: none; cursor: default;">
+    
+    </canvas> -->
+  </div>
+    
 
-		 <!--<canvas style="position:absolute; z-index:9;" id="c"  width="1400" height="900" ></canvas>-->
-		</div>
-	
+   <!--<canvas style="position:absolute; z-index:9;" id="c"  width="1400" height="900" ></canvas>-->
+  </div>
+ 
 
-	
-	</body>
+ 
+ </body>
 
 
 
