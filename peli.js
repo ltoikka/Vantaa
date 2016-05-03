@@ -47,6 +47,7 @@ $(document).ready( function() {
       });
   $('#scene1').click(scene1)
   $('#scene2').click(scene2)
+  $('#blankScene').click(blankScene)
   function scene1 () {
     canvas.setBackgroundImage('junanakyma1.png', canvas.renderAll.bind(canvas), {
       backgroundImageOpacity: 0,
@@ -61,6 +62,12 @@ $(document).ready( function() {
     });
   }
 
+function blankScene () {
+  canvas.setBackgroundImage('junanakyma3.png', canvas.renderAll.bind(canvas), {
+      backgroundImageOpacity: 0,
+      backgroundImageStretch: false
+    });
+}
 
   function deleteObjects(){
     var activeObject = canvas.getActiveObject(),
