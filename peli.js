@@ -79,35 +79,27 @@ $(document).ready( function() {
 
 
 function clone(){
+
+    var copiedObject = null;
+
     if(canvas.getActiveGroup()){
-        for(var i in canvas.getActiveGroup().objects){
-            var object = fabric.util.object.clone(canvas.getActiveGroup().objects[i]);
-            object.set("top", object.top+5);
-            object.set("left", object.left+5);
-            copiedObjects[i] = object;
-        }                    
+        window.alert("You can only select one object to copy at a time");                 
     }
     else if(canvas.getActiveObject()){
         var object = fabric.util.object.clone(canvas.getActiveObject());
         object.set("top", object.top+5);
         object.set("left", object.left+5);
         copiedObject = object;
-        copiedObjects = new Array();
     }
 
-    if(copiedObjects.length > 0){
-        for(var i in copiedObjects){
-            canvas.add(copiedObjects[i]);
-        }                    
-    }
-    else if(copiedObject){
+    if(copiedObject){
         canvas.add(copiedObject);
-    }
-    canvas.renderAll();   
+        canvas.renderAll();
+    }      
 }
 
 
-  $('#clone').click(clone);
+ $('#clone').click(clone);
  $('#black').click(function(){
     canvas.isDrawingMode = true;
     canvas.freeDrawingBrush.color = 'black';
