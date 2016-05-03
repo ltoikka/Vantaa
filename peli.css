@@ -36,21 +36,21 @@ button:hover {
 }
 
 #stopDrawing {
-	/*position:absolute;
+	position:absolute;
     top: 150px;
-    left: 950px;*/
+    left: 950px;
 }
 
 #delete {
-	/*position:absolute;
+	position:absolute;
     top: 180px;
-    left: 950px;*/
+    left: 950px;
 }
 
 #clone {
-	/*position:absolute;
+	position:absolute;
     top: 210px;
-    left: 950px;*/
+    left: 950px;
 }
 
 #black {
