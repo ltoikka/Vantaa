@@ -36,14 +36,11 @@ $(document).ready( function() {
   $("#delete").click(function(){
     deleteObjects();
   });
-  /*$('#red').click(color = red);
-  $('#blue').click(color = blue);
-  $('#green').click(color = green);
-  $('#yellow').click(color = yellow);*/
+
   $("#hide").click(function(){
       $("#hide").remove();
       $(".menu").remove();
-      canvas.setBackgroundImage('cattt.jpg', canvas.renderAll.bind(canvas), {
+      canvas.setBackgroundImage('junanakyma3.png', canvas.renderAll.bind(canvas), {
       backgroundImageOpacity: 0,
       backgroundImageStretch: false
   });
@@ -58,7 +55,7 @@ $(document).ready( function() {
   }
 
   function scene2 () {
-    canvas.setBackgroundImage('cattt.jpg', canvas.renderAll.bind(canvas), {
+    canvas.setBackgroundImage('junanakyma2.png', canvas.renderAll.bind(canvas), {
       backgroundImageOpacity: 0,
       backgroundImageStretch: false
     });
@@ -133,27 +130,6 @@ function clone(){
   });
 
 
-  /*var drawingCompiler = [];
-
-  var compile = function() {
-    //for(i = 0; i < drawingCompiler.length; i++) {
-      var group = new fabric.Group(drawingCompiler);
-      //var line = drawingCompiler[i];
-      //group.push(line);
-    //};
-    drawingCompiler = [];
-    canvas.add(group);
-  };
-
-  canvas.on('path:created', function(e) {
-    console.log("path created");
-    var activeObject = e.target; //chooses line drawn
-    drawingCompiler.push(activeObject); //adds line to compiler
-    compile(); 
-  });*/
-
-
-//Item drawing//
 
 drawItem(canvas, 'https://pixabay.com/static/uploads/photo/2014/04/03/10/00/stool-309589_960_720.png', 10, 535);
 drawItem(canvas, 'https://pixabay.com/static/uploads/photo/2014/12/21/23/41/light-575849_960_720.png', 110, 535);
@@ -203,7 +179,7 @@ drawItem(canvas, 'https://pixabay.com/static/uploads/photo/2014/12/21/23/46/wall
 
 //Background drawing//
 
-canvas.setBackgroundImage('https://pixabay.com/static/uploads/photo/2014/04/02/16/21/table-307005_960_720.png', canvas.renderAll.bind(canvas), {
+canvas.setBackgroundImage('junanakyma3.png', canvas.renderAll.bind(canvas), {
   
 });
 
