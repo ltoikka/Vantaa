@@ -21,7 +21,13 @@ $(document).ready( function() {
 
   //var color = black;
 
-  
+  function front(e) {
+  e.target.bringToFront();
+  }
+
+  canvas.on({
+  'object:moving': front,
+  });
 
   $('#play').click(playAudio);
   $('#pause').click(pauseAudio);
