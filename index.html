@@ -8,11 +8,13 @@
   <script type='text/javascript' src='peli.js'></script>
   <script type='text/javascript' src='images.js'></script>
   <link rel="stylesheet" type="text/css" href="peli.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
 
  </head>
 
  <body id="body">
+
 
   <audio id="myAudio">
     <source src="CittyTraffic.ogg" type="audio/ogg">
@@ -26,21 +28,17 @@
     <button id="pause" type="button">&#9616;&#9616; Audio</button>
     
     <button id="stopDrawing" type="button">Stop drawing</button> 
-    <button id="delete" type="button">Delete selection</button>
-    <button id="clone" type="button">copy</button>
-    <button id="black" type="button">Black brush</button>
-    <button id="red" type="button">Red brush</button>
-    <button id="blue" type="button">Blue brush</button>
-    <button id="green" type="button">Green brush</button>
-    <button id="yellow" type="button">Yellow brush</button>
-<<<<<<< Updated upstream
+    <button id="delete" type="button"><i class="fa fa-trash"></i></button>
+    <button id="clone" type="button"><i class="fa fa-copy"></i></button>
+    <button id="black" type="button"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+    <button id="red" type="button"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+    <button id="blue" type="button"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+    <button id="green" type="button"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+    <button id="yellow" type="button"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+    <button id="orange" type="button"><i class="fa fa-pencil" aria-hidden="true"></i></button>
     <button id="scene2" type="button">Corner</button> 
     <button id="scene1" type="button">Full view</button>
-=======
-    <button id="scene2" type="button">scene2</button> 
-    <button id="scene1" type="button">scene1</button>
     <button id="blankScene" type="button">Blank Scene</button>
->>>>>>> Stashed changes
   </div>
 
   <div style="position:relative; width: 940px; height:900px;">
@@ -59,7 +57,7 @@
    <button id="hide" type="button">Start Game</button> 
   </div>
   <div class="canvas-container"  style="position: relative; -webkit-user-select: none;" width="940" height="1000">
-  <canvas style="position: absolute; z-index: 9; width: 940px; height: 1000; left: 0px; top: 0px; -webkit-user-select: none;" id="c" width="940" height="1000" >
+  <canvas style="position: absolute; z-index: 9; width: 940px; height: 1020; left: 0px; top: 0px; -webkit-user-select: none;" id="c" width="940" height="1020" >
     
   </canvas>
     <!--<canvas class="upper-canvas " width="1400" height="900" style="position: absolute; z-index: 9; width: 1400px; height: 900px; left: 0px; top: 0px; -webkit-user-select: none; cursor: default;">

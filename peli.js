@@ -127,6 +127,10 @@ function clone(){
     canvas.isDrawingMode = true;
     canvas.freeDrawingBrush.color = 'yellow';
   });
+  $('#orange').click(function(){
+    canvas.isDrawingMode = true;
+    canvas.freeDrawingBrush.color = 'orange';
+  });
 
 
 
