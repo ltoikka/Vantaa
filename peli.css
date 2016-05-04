@@ -25,7 +25,13 @@ button:hover {
 	border-bottom: 1px solid rgba(62, 71, 85, 0.4);
 
 }
-
+p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.8;
+    color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 
 #play {
 
